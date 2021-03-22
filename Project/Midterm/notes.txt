@@ -1,0 +1,9 @@
+what if one of the shapes was an ellipse or something else
+
+combine hollis's work with mine (two circles moving at different velocities) maybe different sizes
+
+what do you do if its on a sphere
+
+topogical questions: what is the topology of points, can we have multiple holes?
+
+circle within circle within circle

@@ -1,0 +1,8 @@
+Why does Newton-Raphson work for sqrt values?
+
+Why does the code use relative error (t*epsilon)? 
+
+Think about the meaning of (t-c/t).
+
+d/dt sqrt(x) = 1/2sqrt(x) -> x+1 = x - x/f'(x) -> letting
+    

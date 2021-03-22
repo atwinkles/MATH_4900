@@ -1,0 +1,16 @@
+Recall that Newton's method is an iterative technique defined as
+    x1 = x0 - f(x0)/f'(x0)
+used to find roots of the function f(x). For the program Sqrt, 
+we have t = (c/t + t)/2.0. Notice that finding the square root of
+N is equivalent to solving for x^2 - N = 0, so by Newton's method
+we find 
+    x1 = x0 - (x0^2 - N)/(2x0).
+This may be rearranged to
+    x1 = (x0^2 - N)/(2x0),
+or 
+    x1 = (x0 - N/x0)/2.
+Replacing these variables with those used in the Sqrt program, this
+becomes 
+    t = (t + c/t)/2,
+where t = x0,x1 and c = -N. Thus we see that Sqrt implements 
+Newton's method. 

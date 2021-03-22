@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\pagenumbering{arabic}
+\usepackage{fancyhdr}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{eucal}
+\usepackage{parskip} % removes auto indentation for paragraphs
+\usepackage{enumitem} % changes the indexing for enumerate
+\setlist[enumerate,1]{label = {(\alph*)}}
+
+\usepackage{fancyvrb}
+
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\R{\mathbb{R}}
+\newcommand{\Mod}[1]{\ (\text{mod}\ #1)}
+\newcommand{\Problem}[1]{\textbf{Problem #1}}
+\newcommand{\li}[0]{\liminf_{n\to\infty}}
+\newcommand{\ls}[0]{\limsup_{n\to\infty}}
+\newcommand{\dl}[2]{\displaystyle\lim_{#1 \to #2}}
+
+\linespread{1.5}
+
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{MATH 4900}
+\lhead{Alexander Winkles}
+\chead{\Large \textbf{Problem Set 1}}
+\cfoot{Page \thepage}
+
+\begin{document}
+
+\Problem{1.2.2}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+\VerbatimInput{Problem2.java}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+These values are not always exactly 1 because $\sin^2{\theta}$ and $\cos^2{\theta}$ are decimal approximations, so precision is lost. 
+
+\Problem{1.2.7}
+
+These will print out the following:
+\begin{enumerate}
+\item 2bc
+\item 5bc
+\item 5bc
+\item bc5
+\item bc23	
+\end{enumerate}
+
+This can be understood by realizing that within System.out.println, integers are converted to strings that are concatenated to other strings. However, there is an order of operations in place that allows 3 and 2 to be added before converted.  
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+\VerbatimInput{Problem7.java}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\Problem{1.2.13}
+
+The result of this statement is false, because Math.sqrt(2) is only an approximation, so squaring it will not return 2 exactly. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+\VerbatimInput{Problem13.java}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\Problem{1.2.19}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+\VerbatimInput{Problem19.java}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\Problem{1.2.26}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+\VerbatimInput{Problem26.java}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\Problem{1.2.27 (Honors Option)}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+\VerbatimInput{Problem27.java}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	
+\end{document}
